@@ -625,6 +625,7 @@ section {
 #ctcForm .secInner-tti {
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 1em;
 }
 #ctcForm .ctcArea {
   display: flex;
@@ -663,6 +664,128 @@ section {
 #ctcForm .ctcBtn:hover {
   background-color: #fff;
   color: var(--color-black);
+}
+
+/* Section - form Style */
+.ctcFormSec {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.formField input:focus-visible,
+.formField select:focus-visible {
+  outline: var(--color-green) solid 2px;
+}
+.ctcFormSec .formField:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.formField .formField-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.formField .formTtl {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+.mustLabel {
+  display: inline-block;
+  background-color: #ff6700;
+  border-radius: 3px;
+  font-size: .65rem;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  padding: .25em .5em .285em;
+  margin-top: 0.225em;
+}
+.formField .formField-input,
+.formField select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.formField .selectWrap {
+  display: block;
+  width: 200px;
+  margin-top: 5px;
+  position: relative;
+}
+.formField .selectWrap::before,
+.formField .selectWrap::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+.formField .selectWrap::before {
+  display: inline-block;
+  top: 1px;
+  right: 0;
+  width: 2.8em;
+  height: calc(100% - 2px);
+  border-radius: 0 5px 5px 0;
+  background-color: var(--color-black);
+}
+.formField .selectWrap::after {
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.formBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.formBtns button,
+.formBtns .backToHome {
+  display: block;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+  margin: 0 10px;
+  padding: .75em 0 .85em;
+  transition: all .3s;
+}
+.formBtns button[type=submit] {
+  background-color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+.formBtns button[type=submit]:hover {
+  background-color: #fff;
+  color: var(--color-green);
+}
+.formBtns .backToHome {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+.formBtns .backToHome:hover {
+  background-color: #fff;
+  color: var(--color-black);
+}
+
+/* Section - thanks Page */
+#ctcForm.thanksPage .comnSecInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.thanksTxts p {
+  font-size: var(--clamp_font_size-M_1);
+  margin-bottom: 1em;
 }
 
 /* Footer */
